@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+program="./smarttill"
+args="opendrawer:"
+
+echo "Executing: $program $args"
+exec "$program" "$args"

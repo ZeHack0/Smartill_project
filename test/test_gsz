@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+program="./smarttill"
+timestamp="$(date +%Y%m%dT%H%M%S)"
+args="gsz:12345678:123456:12345678:${timestamp}"
+
+echo "Executing: $program $args"
+exec "$program" "$args"
